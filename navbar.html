@@ -1,0 +1,346 @@
+<!doctype html>
+    <head>
+        <title>Navigation Bar with different Icons</title>
+        <!-- change or write your page title with the help of title tags-->
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <!-- connect css file with html useing link tag -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- link this font-awesome icon css link with html file for accessing all fornt awesome
+        icon form boostrapcdn.com -->
+    
+    <style>
+        /* Add a pink background color to the body background */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;/* we can change font style by using the font-familiy css tag */
+}
+ul{
+	position:absolute;/* set the position of the navigation bar*/
+	top: 8%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 20px 0; /* Adding some padding */
+	background: #fff; /* Add a white background color to the top navigation */
+	display: flex; /* flex Set navigation bar horizontally using the  display tag*/
+	border-radius: 10px; /* add the border radius */
+	box-shadow: 0 10px 10px rgba(0,0,0,.5)
+    background: ghostwhite;
+    
+}
+ /* Style the links inside the navigation bar */
+ul li{
+	list-style: none;
+	text-align: center;
+	display: table-header-group;
+	border-right: px solid rgba(0,0,0,0.2);
+}
+ul li:last-child{
+	border-right: none;
+}
+ul li a{
+	text-decoration:blink;
+	padding: 0 50px;
+	display: block;
+}
+/* Style the icon inside the navigation bar */
+ul li a .icon{
+	width: 40px; /* changing the width of the icon */
+	height: 40px; /* changing the height of the icon */
+	text-align: center;
+	
+	overflow: hidden;
+	margin: 0 auto 10px;
+	
+}
+/* set the size, height, width of the icon*/
+ul li a .icon .fa{
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	font-size: 34px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	color: #ff43a9;
+}
+
+/* Change the color of icon on hover */
+ul li a .icon .fa:last-child{
+	color: ff43a9;
+}
+/* style the color and transform of the icon on hover */
+ul li a:hover .icon .fa{
+	transform: translateY(-100%); /* translate y to add the hover effect */
+}
+ul li a .name{
+	position: relative;
+	height: 20px; 
+	width: 100%;
+	display: block;
+	overflow: hidden;/*make ul li a .name overflow is hidden*/
+}
+/*style the font size and set transition of the navigation menu*/
+ul li a .name span{
+	display: block;
+	position: relative;
+	color: #000000;
+	font-size: 18px; /* changing font size */
+	line-height: 20px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	
+}
+/*set and change position, top, width, left, height color of the 'class'.name span:before*/
+ul li a .name span:before{
+	content: attr(data-text);
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	left: 0;
+	height: 1005;
+	color: deeppink;
+	
+}
+/*style hover effect of ul li a .name span */
+ul li a:hover .name span{
+	transform: translateY(20px);
+}
+
+    </style>
+    </head>
+    <body>
+        <ul>
+            <!--starting ul tag to create unordered lists.-->
+            <li>
+                <!--The HTML li element is used to represent an item in a list. ... In menus and unordered lists-->
+                <!--the a tag defines a hyperlink, which is used to link from one page to another-->
+                <a href="navbar.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i><!-- this is home icon link get form fornt-awesome icon for home button -->	
+                        <i class="fa fa-home" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Home">Home</span></div>
+                    <!-- we are create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="accueil2.html">
+                    <!-- this anchor text for link your About page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-file" aria-hidden="true"></i><!-- this is file icon link get form fornt-awesome icon for about -->	
+                        <i class="fa fa-file" aria-hidden="true"></i><!-- copy and paste the file icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="About">About</span></div>
+                    <!-- we are create second menu item name About -->
+                </a>
+            </li>
+            <li>
+                <a href="mes services2.html">
+                    <!-- this anchor text for link your service page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-cogs" aria-hidden="true"></i><!-- this is cogs icon link get form fornt-awesome iocn for service menu -->	
+                        <i class="fa fa-cogs" aria-hidden="true"></i><!-- copy and paste the cogs icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Services">Services</span></div>
+                    <!--- we are create third menu item name services -->
+                </a>
+            </li>
+            <li>
+                <a href="portfolio2.html">
+                    <!-- this anchor text for link your portfolio page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                        <i class="fa fa-picture-o" aria-hidden="true"></i><!-- copy and paste the picture icon link here for hover effect -->		
+                    </div>
+                    <div class="name" ><span data-text="Portfolio">Portfolio</span></div>
+                    <!-- we are create fourth menu item name portfolio -->
+                </a>
+            </li>
+            <li>
+               
+            </li>
+            <li>
+                <a href="contact2.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 		
+                        <i class="fa fa-envelope" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Contact">Contact</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="bog.html">
+                    <!-- this anchor text for link your Blog page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- this is Book icon link get form fornt-awesome icon for Blog --> 	
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- copy and paste the Book icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Blog">Blog</span></div>
+                    <!-- we are create seventh menu item name Blog -->
+                </a>
+            </li>
+            <li>
+              
+                    <!-- we are create eight menu item name Cart -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!-- this anchor text for link your Price page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-usd" aria-hidden="true"></i><!-- this is usd icon link get form fornt-awesome iocn for Price --> 	
+                        <i class="fa fa-usd" aria-hidden="true"></i><!-- copy and paste the usd icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Price">Price</span></div>
+                    <!-- we are create nineth menu item name Price -->
+                </a>
+                </li>
+
+
+
+                
+                      <audio id="myAudio">
+  <source src="IMAGES/Ed Sheeran - Perfect.mp3">
+  <source src="IMAGES/Ed Sheeran - Perfect.MP3">
+</audio>
+
+<p>Music Play.</p>
+
+<button onclick="playAudio()" type="button" button style= "background-color:hotpink;" >Play Audio </button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+
+                    <!-- we are create tenth menu item name login panel -->
+                </a>
+            </li>
+        </ul>
+    </body>
+</html>
+
+<br><br><br><br><br><br>
+
+<div class="container"id="ACCUEIL">
+ <center><img src="IMAGES/enattendant2.jpg" style="width:100%;"></center>
+  <div class="content">
+    <center><h1>GRAPHISTE-WEBDESIGNER</h1></center>
+    <center><p1>Au service des entités soucieuses de l'environnement et adeptes du minimalisme, je leur propose une touche artistique à travers mes différentes réalisations! </p1></center>
+
+</div>
+
+<style>
+    
+h1{
+    color: deeppink;
+    font-size: 40px;
+}
+
+p1{
+    font-size: 30px;
+}
+</style>
+
+
+
+  
+</div>
+</div>
+</div>
+
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("IMAGES/cardcard.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+
+<div class="parallax"></div>
+
+<div style="height:1000px;background-color: black;font-size:36px;">
+<p><b><center><wp> Bonjour et bienvenu(e) sur ma page !</wp></center>
+  <center></center><p>Au service des entités soucieuses de l'environnement et adeptes du <span style="color:blue;font-weight:medium">minimalisme</span>, je leur propose une touche artistique à travers mes différentes réalisations!.</b>
+  Enchantée de vous faire découvrir mon univers !  Christiana,passionnée par le graphisme et grande pratiquante du minimalisme au quotidien depuis maintenant cinq ans!
+  Concept importé des Etats-Unis, je ne peux que vanter ses mérites.  Gain de temps, productivité plus importante, son application m’a permis de maintenir un équilibre entre mes passions et mon travail.
+  Spécialisée dans la communication et prônant des valeurs environnementales, je propose mes services aux entités soucieuses de l’éthique et désireuses de mettre leurs pratiques vertes en avant !
+  Je serai ravie de concrétiser vos projets à travers le design minimaliste. (Je vous invite d’ailleurs à découvrir quelques-unes de mes réalisations)</p></center>
+</div>
+</div>
+</div>
+
+</body>
+
+
+<style>
+
+p{
+  color: white;
+  font-style: georgia ;
+  }
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('IMAGES/card.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+</style>
+</head>
+<body>
+
+
+<div class="parallax"></div>
+
+<div style="height:1000px;background-color: black;font-size:36px;">
+<p><b><center><wp> Bonjour et bienvenu(e) sur ma page !</wp></center>
+  <center></center><p>Au service des entités soucieuses de l'environnement et adeptes du <span style="color:blue;font-weight:medium">minimalisme</span>, je leur propose une touche artistique à travers mes différentes réalisations!.</b>
+  Enchantée de vous faire découvrir mon univers !  Christiana,passionnée par le graphisme et grande pratiquante du minimalisme au quotidien depuis maintenant cinq ans!
+  Concept importé des Etats-Unis, je ne peux que vanter ses mérites.  Gain de temps, productivité plus importante, son application m’a permis de maintenir un équilibre entre mes passions et mon travail.
+  Spécialisée dans la communication et prônant des valeurs environnementales, je propose mes services aux entités soucieuses de l’éthique et désireuses de mettre leurs pratiques vertes en avant !
+  Je serai ravie de concrétiser vos projets à travers le design minimaliste. (Je vous invite d’ailleurs à découvrir quelques-unes de mes réalisations)</p></center>
+</div>
+</div>
+</div>
+
+<div class="parallax"></div>
+
+<div style="height:1000px;background-color:black;font-size:60px">
+<center><p>PORTFOLIO</p></center>.
+</div>
+
+

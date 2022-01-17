@@ -1,0 +1,194 @@
+
+<html>
+<head>
+  <title> Site personnel </title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+<header>
+   
+
+</div>
+
+</body>
+
+
+
+<div class="card">
+      <div class="card-inner">
+             <div class="card-front">
+               <div class= "card-content">
+                 
+               <figcaption> Mes passions </figcaption>
+               <ul>
+               <li>Art</li>
+               <li>Mode</li>
+               <li>Voyage</li>
+               <li>Danse</li>
+               </ul>
+              </div>
+              </div>
+      <div class="card-back">
+        <div class="card-top">
+      <figure>
+        <div class="card-image"></div>
+        <img src="IMAGES/art rose.jpg" alt="More">
+      </figure>
+         <button> More about me</button>
+      <div class="design-container">
+        <span class="design design--1"></span>
+        <span class="design design--2"></span>
+        <span class="design design--3"></span>
+        <span class="design design--4"></span>
+        <span class="design design--5"></span>
+        <span class="design design--6"></span>
+        <span class="design design--7"></span>
+        <span class="design design--8"></span>
+      </div>
+    </div>
+
+  </div>
+
+
+<style>
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  min-height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-image: (0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+  
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+ .card {
+  margin: 130 auto;
+  width:250px;
+  height:300px;
+  perspective: px;
+  text-align: center;
+}
+
+.card-inner {
+  position:relative;
+  width: 250px;
+  height: 300px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+
+.card-front, .card-back {
+  position:absolute;
+  height:300px;
+  width: 250px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 20px;
+  border-radius:8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-front {
+  background-image:url('IMAGES/art rose.jpg');
+  background-size:cover;
+  background-position:center center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.card-front:before {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  top: 0px;
+  background: linear-gradient(0deg, black, transparent);
+  background-image:url('IMAGES/ rose.jpg')
+}
+
+.card-front .card-content {
+  z-index: 1;
+  color:white;
+}
+
+.card-front .card-content p {
+  color:#ececec;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back .card-image {
+  width: 250px;
+  height: 300px;
+  margin:0 auto;
+  border:solid 1px #cecece;
+  border-radius:100%;
+  background-image:url('IMAGES/art rose.jpg');
+  background-size:cover;
+  background-position:center center;
+}
+
+.card-back p {
+  margin-top:12px;
+}
+
+.card-back .card-icons {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back .card-icons a {
+  font-size:18px;
+  color:white;
+  background:black;
+  width:42px;
+  height:42px;
+  border-radius:100%;
+  margin:8px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition:opacity .2s;
+}
+
+.card-back .card-icons a:hover {
+  cursor:pointer;
+  opacity:0.7;
+}
+
+.card-front {
+  transition: opacity .6s;
+}
+
+.card:hover .card-front {
+  opacity:0;
+}
+</style>
+
+
+
+
+
+
